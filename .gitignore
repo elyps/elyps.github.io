@@ -15,3 +15,6 @@ jsconfig.json
 hugo_stats.json
 go.sum
 yarn.lock
+.hugo_build.lock
+__ssh_key_secret_no_sync__
+__ssh_key_secret_no_sync__.7z
