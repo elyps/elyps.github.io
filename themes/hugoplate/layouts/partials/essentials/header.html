@@ -1,0 +1,35 @@
+<header class="header">
+    <nav class="navbar container">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="py-6">
+                <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
+                    {{ partial "logo" }}
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <div>
+                <ul class="flex space-x-4">
+                    {{ range site.Menus.main }}
+                    <li>
+                        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- Actions -->
+            <div class="flex items-center space-x-3">
+                {{ partial "components/language-switcher" (dict "Context" . "Class" "px-2 py-1") }}
+                {{ partial "components/theme-switcher" (dict "Class" "") }}
+
+                {{ if site.Params.navigation_button.enable }}
+                <a href="{{ site.Params.navigation_button.link | relLangURL }}" class="btn btn-primary">
+                    {{ site.Params.navigation_button.label }}
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </nav>
+</header>

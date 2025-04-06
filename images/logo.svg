@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E90FF" />
+      <stop offset="100%" stop-color="#0F4C81" />
+    </radialGradient>
+  </defs>
+
+  <!-- Hintergrund / Button -->
+  <circle cx="100" cy="100" r="95" fill="url(#grad)" stroke="#1A1A1A" stroke-width="4" />
+
+  <!-- Glühbirnen-Symbol -->
+  <text x="100" y="50" text-anchor="middle" font-family="Courier New, monospace"
+        font-size="20" font-weight="bold" fill="#FFFFAA">&lt;/&gt;</text>
+
+  <!-- Initialen -->
+  <text x="100" y="108" text-anchor="middle" font-family="Orbitron, sans-serif"
+        font-size="28" font-weight="bold" fill="#FFFFFF">{BF}</text>
+
+  <!-- Berufsbezeichnung -->
+  <text x="100" y="130" text-anchor="middle" font-family="Courier New, monospace"
+        font-size="12" fill="#D0E0FF">Software Entwickler</text>
+
+  <!-- Blinkender Cursor -->
+  <rect x="160" y="95" width="4" height="20" fill="#FFFFFF" rx="1">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

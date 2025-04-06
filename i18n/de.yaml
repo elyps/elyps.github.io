@@ -1,0 +1,49 @@
+home: Startseite
+read_more: Weiterlesen
+send: Senden
+related_posts: Verwandte Beiträge
+categories: Kategorien
+tags: Tags
+toc: Inhaltsverzeichnis
+share: Teilen
+
+# Search
+search_input_placeholder: Suche nach einem Beitrag...
+search_no_results: Keine Ergebnisse gefunden
+search_initial_message: Typ etwas um zu suchen...
+search_navigate: um zu navigieren
+search_select: um zu selektieren
+search_close: um zu schließen
+
+# Footer
+impressum: Impressum
+datenschutz: Datenschutz
+kontakt: Kontakt
+
+# Navigation
+home: Startseite
+about: Über mich
+projects: Projekte
+blog: Blog
+contact: Kontakt
+
+# Blog
+read_more: Weiterlesen
+categories: Kategorien
+tags: Tags
+toc: Inhaltsverzeichnis
+share: Teilen
+
+# Projects
+projects: Projekte
+project: Projekt
+
+# Contact
+contact: Kontakt
+
+# About
+about: Über mich
+
+# Projects
+projects: Projekte
+project: Projekt

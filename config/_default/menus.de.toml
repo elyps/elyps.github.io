@@ -1,0 +1,83 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Startseite"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Über mich"
+url = "/about"
+weight = 2
+
+[[main]]
+name = "Projekte"
+url = "/projects"
+weight = 3
+
+# [[main]]
+# weight = 7
+# name = "Pages"
+
+[[main]]
+name = "Blog"
+url = "/blog"
+weight = 4
+
+# [[main]]
+# name = "Kontakt"
+# url = "/contact"
+# weight = 5
+
+# [[main]]
+# parent = "Pages"
+# name = "Authors"
+# url = "/authors"
+
+# [[main]]
+# parent = "Pages"
+# name = "Categories"
+# url = "/categories"
+
+# [[main]]
+# parent = "Pages"
+# name = "404 Page"
+# url = "/404"
+
+
+# footer menu
+# [[footer]]
+# name = "Über mich"
+# url = "/about"
+# weight = 1
+
+# [[footer]]
+# name = "Projekte"
+# url = "/projects"
+# weight = 2
+
+# [[footer]]
+# name = "Blog"
+# url = "/blog"
+# weight = 3
+
+# [[footer]]
+# name = "Kontakt"
+# url = "/contact"
+# weight = 1
+
+[[footer]]
+name = "Datenschutz"
+url = "/privacy-policy"
+weight = 1
+
+[[footer]]
+name = "Impressum"
+url = "/imprint"
+weight = 2
+
+# [[footer]]
+# name = "Kategorien"
+# url = "/categories"
+# weight = 4

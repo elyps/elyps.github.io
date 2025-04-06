@@ -1,0 +1,19 @@
+/* Add your own custom styles here */
+
+/* Gelber Theme-Switcher */
+.theme-switcher input[type="checkbox"]+label {
+    background-color: #FFD700 !important;
+    /* Gold */
+    border-color: #DAA520 !important;
+    /* Goldenrod */
+}
+
+.theme-switcher input[type="checkbox"]+label svg {
+    color: #8B4513 !important;
+    /* Dunkles Braun für besseren Kontrast */
+}
+
+.theme-switcher input[type="checkbox"]:checked+label {
+    background-color: #FFD700 !important;
+    /* Gold */
+}

@@ -1,0 +1,26 @@
+<svg width="1100" height="200" viewBox="0 0 1100 200"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Farbverlauf für Kreis -->
+        <radialGradient id="grad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#1E90FF" />
+            <stop offset="100%" stop-color="#0F4C81" />
+        </radialGradient>
+
+        <!-- Clipping-Maske -->
+        <clipPath id="circle-clip">
+            <circle cx="100" cy="100" r="95" />
+        </clipPath>
+    </defs>
+
+    <!-- Runder Button -->
+    <circle cx="100" cy="100" r="95" fill="url(#grad)" stroke="#1A1A1A" stroke-width="4" />
+
+    <!-- Geklipptes, leicht nach rechts versetztes BF -->
+    <g clip-path="url(#circle-clip)">
+        <text x="104" y="145" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="148" font-weight="bold" fill="#FFFFFF" transform="rotate(-7 104 145)">BF</text>
+    </g>
+
+    <!-- Domain-Text – jetzt richtig groß -->
+    <text x="230" y="140" font-family="Poppins, sans-serif" font-size="96" font-weight="700" fill="#1E90FF">bastian-fischer.dev</text>
+</svg>
