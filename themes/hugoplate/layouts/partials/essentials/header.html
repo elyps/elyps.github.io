@@ -3,8 +3,16 @@
         <div class="flex justify-between items-center">
             <!-- Logo -->
             <div class="py-6">
-                <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
-                    {{ partial "logo" }}
+                <a class="navbar-brand flex items-center" href="{{ site.Home.RelPermalink }}">
+                    <!-- Logo Image -->
+                    {{ if site.Params.logo }}
+                    <img src="{{ site.Params.logo | absURL }}" width="{{ site.Params.logo_width | default `40px` }}"
+                        height="{{ site.Params.logo_height | default `40px` }}" alt="{{ site.Title }}"
+                        class="rounded-full max-h-10" />
+                    {{ end }}
+                    
+                    <!-- Logo Text - Always show -->
+                    <span class="logo-text ml-2">{{ site.Params.logo_text }}</span>
                 </a>
             </div>
 

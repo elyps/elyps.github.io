@@ -1,0 +1,57 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="container">
+      <div class="row mb-12">
+        <div class="mx-auto text-center md:col-10 lg:col-8 xl:col-7">
+          <h1 class="mb-4">{{ .Title }}</h1>
+          <div class="content">{{ .Content }}</div>
+        </div>
+      </div>
+      <div class="row gy-5 gx-4">
+        {{ range .RegularPages }}
+          <div class="col-12 md:col-6 lg:col-4">
+            <div class="card project-card rounded p-3 h-full">
+              {{ if .Params.image }}
+                <img
+                  class="project-image mb-4 rounded"
+                  src="{{ .Params.image | absURL }}"
+                  alt="{{ .Title }}"
+                  width="445"
+                  height="230" />
+              {{ else }}
+                <div class="project-image-placeholder mb-4 rounded"
+                     style="background-color: {{ index (slice "#4CAF50" "#1E90FF" "#FF6347" "#FFD700" "#9C27B0") (mod .Ordinal 5) }};">
+                  <div class="project-image-placeholder-text">{{ slicestr .Title 0 1 }}</div>
+                </div>
+              {{ end }}
+              <div class="card-body p-0">
+                <h3 class="h4 mb-3 mt-4">
+                  <a href="{{ .RelPermalink }}" class="text-text-dark hover:text-primary dark:text-darkmode-light dark:hover:text-primary block">
+                    {{ .Title }}
+                  </a>
+                </h3>
+                <p class="mb-3">{{ .Params.description }}</p>
+                
+                <div class="mb-4">
+                  {{ range .Params.categories }}
+                    <span class="project-category">{{ . }}</span>
+                  {{ end }}
+                </div>
+                
+                <div class="mb-4">
+                  {{ range .Params.tags }}
+                    <span class="project-tag">{{ . }}</span>
+                  {{ end }}
+                </div>
+                
+                <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+                  Mehr erfahren →
+                </a>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }} 

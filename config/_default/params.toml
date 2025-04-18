@@ -2,16 +2,16 @@
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
 favicon = "images/favicon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
-logo = "/images/logowithtext.svg"
-logo_darkmode = "/images/logowithtext.svg"
+logo = "/images/ai_head_nobg_sm.png"
+logo_darkmode = "/images/ai_head_nobg_sm.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "240px"
-logo_height = "70px"
+logo_width = "40px"
+logo_height = "40px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "bastian-fischer.dev"
+logo_text = "elyps."
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode

@@ -17,3 +17,315 @@
     background-color: #FFD700 !important;
     /* Gold */
 }
+
+/* Grüne Haken auf der Startseite */
+input[type="checkbox"]:checked {
+    background-color: #4CAF50 !important;
+    border-color: #4CAF50 !important;
+}
+
+input[type="checkbox"]:checked::before {
+    color: #ffffff !important;
+}
+
+/* Grüne Font Awesome Checkmark-Icons */
+.fa-check, 
+i.fa.fa-check {
+    color: #4CAF50 !important; /* Grün */
+}
+
+/* Testimonial Avatar Styles */
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-avatar-fallback {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Projekt-Karten */
+.project-card {
+    transition: transform 0.3s, box-shadow 0.3s !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+.project-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.project-image {
+    height: 200px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+}
+
+/* Projekt-Bildplatzhalter */
+.project-image-placeholder {
+    height: 200px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: white !important;
+}
+
+.project-image-placeholder-text {
+    font-size: 72px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+.project-detail-image-placeholder {
+    height: 400px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: white !important;
+}
+
+.project-detail-image-placeholder-text {
+    font-size: 120px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+.project-category {
+    display: inline-block !important;
+    padding: 4px 8px !important;
+    margin-right: 8px !important;
+    margin-bottom: 8px !important;
+    background-color: #f0f0f0 !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+}
+
+.project-tag {
+    display: inline-block !important;
+    padding: 2px 6px !important;
+    margin-right: 5px !important;
+    margin-bottom: 5px !important;
+    background-color: #e0e0e0 !important;
+    border-radius: 3px !important;
+    font-size: 11px !important;
+    color: #555 !important;
+}
+
+/* Rundes Logo und SVG */
+svg,
+.navbar-brand svg,
+.navbar a.navbar-brand svg,
+.navbar-brand img,
+.navbar a img {
+    border-radius: 9999px !important;
+    overflow: hidden;
+}
+
+/* Spezifische Regel für das Logo-Bild */
+img[src$="logo_small.webp"] {
+    border-radius: 9999px !important;
+    overflow: hidden;
+    max-height: 40px !important;
+    width: auto !important;
+    vertical-align: middle;
+}
+
+/* Spezifische Regel für das SVG-Element in der Navbar */
+.navbar a.navbar-brand svg {
+    clip-path: circle(50%);
+}
+
+/* Zusätzliche Regel für das SVG-Element im Footer */
+footer .navbar-brand svg {
+    border-radius: 9999px !important;
+    overflow: hidden;
+}
+
+/* Direktes Styling für den Kreis im SVG */
+svg circle {
+    border-radius: 9999px !important;
+}
+
+/* Spezielles Styling für das BF-Logo */
+.navbar-brand svg circle:first-of-type {
+    overflow: hidden;
+    border-radius: 9999px !important;
+}
+
+/* Logo-Text Styling */
+.logo-text {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    margin-left: 0.5rem !important;
+    display: inline-block !important;
+    color: #1E90FF !important;
+    text-transform: lowercase !important;
+    letter-spacing: -0.05em !important;
+    line-height: 1 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.logo-text::after {
+    content: ".";
+    color: #FF6347 !important;
+    font-weight: bold !important;
+}
+
+/* Spezifisch für Footer Logo Text */
+footer .logo-text, 
+footer a .logo-text {
+    font-size: 1.5rem !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: inline-block !important;
+    color: #1E90FF !important;
+}
+
+/* Sicherstellen, dass Footer-Elemente korrekt angezeigt werden */
+footer .navbar-brand {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+/* Testimonial Card Styles */
+.swiper-slide {
+  height: auto !important;
+}
+
+.testimonial-card {
+  height: 100%;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Mode Styles */
+.dark .testimonial-card {
+  background-color: #1a1a1a;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dark .testimonial-content {
+  color: #e0e0e0;
+}
+
+.dark .testimonial-name {
+  color: #e0e0e0;
+}
+
+.dark .testimonial-designation {
+  color: #e0e0e0;
+  opacity: 0.7;
+}
+
+.dark .testimonial-author {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.testimonial-quote {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-quote svg {
+  width: 33px;
+  height: 20px;
+  margin-bottom: 1rem;
+  color: #adb5bd; /* Dezentes Grau */
+  opacity: 0.6;
+}
+
+.testimonial-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.testimonial-avatar-fallback {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.testimonial-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.testimonial-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.testimonial-designation {
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  opacity: 0.8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
