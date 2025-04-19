@@ -8,11 +8,15 @@
           href="{{ site.Home.RelPermalink }}">
           <!-- Logo Image -->
           {{ if site.Params.logo }}
-          <img src="{{ site.Params.logo | absURL }}" width="{{ site.Params.logo_width | default `40px` }}"
-              height="{{ site.Params.logo_height | default `40px` }}" alt="{{ site.Title }}"
+            <img
+              src="{{ site.Params.logo | absURL }}"
+              width="{{ site.Params.logo_width | default `40px` }}"
+              height="{{ site.Params.logo_height | default `40px` }}"
+              alt="{{ site.Title }}"
               class="rounded-full max-h-10" />
           {{ end }}
-          
+
+
           <!-- Logo Text - Always show -->
           <span class="logo-text ml-2">{{ site.Params.logo_text }}</span>
         </a>

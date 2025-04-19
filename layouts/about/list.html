@@ -3,373 +3,563 @@
     <div class="container">
       <!-- Kreative Wellenform als Dekoration -->
       <div class="absolute -top-20 left-0 right-0 z-0 overflow-hidden">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[150px]">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-primary/10"></path>
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          class="relative block w-full h-[150px]">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="fill-primary/10"></path>
         </svg>
       </div>
-      
+
       <!-- Hauptbereich mit innovativem Layout -->
       <div class="mb-16 relative z-10 perspective-1000">
         <div class="grid lg:grid-cols-12 gap-8">
           <!-- Linke Spalte mit Profil -->
-          <div class="lg:col-span-4 transform-gpu lg:sticky lg:top-10 self-start">
-            <div class="bg-light dark:bg-darkmode-light rounded-3xl shadow-2xl overflow-hidden transform-gpu hover:scale-[1.02] transition-all duration-500 border border-primary/10">
+          <div
+            class="lg:col-span-4 transform-gpu lg:sticky lg:top-10 self-start">
+            <div
+              class="bg-light dark:bg-darkmode-light rounded-3xl shadow-2xl overflow-hidden transform-gpu hover:scale-[1.02] transition-all duration-500 border border-primary/10">
               <!-- Hintergrund Orbit Animation -->
-              <div class="relative h-40 bg-gradient-to-r from-primary/30 to-secondary/30 overflow-hidden">
+              <div
+                class="relative h-40 bg-gradient-to-r from-primary/30 to-secondary/30 overflow-hidden">
                 <div class="absolute inset-0">
-                  <div class="absolute w-20 h-20 rounded-full bg-white/20 animate-orbit-1"></div>
-                  <div class="absolute w-10 h-10 rounded-full bg-white/20 animate-orbit-2"></div>
-                  <div class="absolute w-6 h-6 rounded-full bg-white/20 animate-orbit-3"></div>
+                  <div
+                    class="absolute w-20 h-20 rounded-full bg-white/20 animate-orbit-1"></div>
+                  <div
+                    class="absolute w-10 h-10 rounded-full bg-white/20 animate-orbit-2"></div>
+                  <div
+                    class="absolute w-6 h-6 rounded-full bg-white/20 animate-orbit-3"></div>
                 </div>
-                <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-light dark:from-darkmode-light to-transparent"></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-light dark:from-darkmode-light to-transparent"></div>
               </div>
-              
+
               <!-- Profilbild mit kreativem Design -->
               <div class="relative z-10 -mt-20 px-6 text-center">
                 <div class="inline-block relative">
                   <!-- Rotating Border -->
-                  <div class="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-secondary to-primary animate-rotate-slow"></div>
-                  <div class="absolute inset-1.5 rounded-full bg-light dark:bg-darkmode-light"></div>
+                  <div
+                    class="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-secondary to-primary animate-rotate-slow"></div>
+                  <div
+                    class="absolute inset-1.5 rounded-full bg-light dark:bg-darkmode-light"></div>
                   {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mx-auto rounded-full border-4 border-light dark:border-darkmode-light relative z-10" "Size" "160x160") }}
                 </div>
-                
-                <h2 class="h3 mt-4 mb-2 text-primary font-bold">{{ .Title }}</h2>
-                <div class="inline-flex items-center px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-bold">
+
+                <h2 class="h3 mt-4 mb-2 text-primary font-bold">
+                  {{ .Title }}
+                </h2>
+                <div
+                  class="inline-flex items-center px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-bold">
                   <i class="fa fa-code mr-2"></i> Entwickler & Problemlöser
                 </div>
-                
+
                 <!-- Social Icons mit Animation -->
                 <div class="flex justify-center space-x-3 mt-6 mb-6">
-                  <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-darkmode-body shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-darkmode-body shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <i class="fab fa-github text-lg text-primary"></i>
                   </a>
-                  <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-darkmode-body shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-darkmode-body shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <i class="fab fa-linkedin-in text-lg text-primary"></i>
                   </a>
-                  <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-darkmode-body shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-darkmode-body shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <i class="fab fa-twitter text-lg text-primary"></i>
                   </a>
-                  <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-darkmode-body shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-darkmode-body shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <i class="fa fa-envelope text-lg text-primary"></i>
                   </a>
                 </div>
-                
+
                 <!-- Tag Cloud für Kernkompetenzen -->
                 <div class="px-4 pb-6">
-                  <h4 class="text-sm uppercase tracking-wider text-gray-500 dark:text-darkmode-text mb-3">Kernkompetenzen</h4>
+                  <h4
+                    class="text-sm uppercase tracking-wider text-gray-500 dark:text-darkmode-text mb-3">
+                    Kernkompetenzen
+                  </h4>
                   <div class="flex flex-wrap justify-center gap-2">
-                    <span class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300">JavaScript</span>
-                    <span class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300">React</span>
-                    <span class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300">UX/UI</span>
-                    <span class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300">Node.js</span>
-                    <span class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300">Responsive</span>
-                    <span class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300">PHP</span>
+                    <span
+                      class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300"
+                      >React</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300"
+                      >UX/UI</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300"
+                      >Node.js</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300"
+                      >Responsive</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-white dark:bg-darkmode-body rounded-full text-xs font-medium shadow-sm hover:shadow hover:scale-105 transition-transform duration-300"
+                      >PHP</span
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <!-- Rechte Spalte mit Content und Features -->
           <div class="lg:col-span-8">
             <!-- Bio Box mit Kreativem Design -->
-            <div class="bg-light dark:bg-darkmode-light rounded-3xl shadow-xl p-8 mb-10 relative overflow-hidden group">
+            <div
+              class="bg-light dark:bg-darkmode-light rounded-3xl shadow-xl p-8 mb-10 relative overflow-hidden group">
               <!-- Decorative Elements -->
-              <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary/5 to-secondary/5 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition-transform duration-700"></div>
-              <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-primary/5 to-secondary/5 rounded-full -ml-10 -mb-10 group-hover:scale-110 transition-transform duration-700"></div>
-              
+              <div
+                class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary/5 to-secondary/5 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition-transform duration-700"></div>
+              <div
+                class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-primary/5 to-secondary/5 rounded-full -ml-10 -mb-10 group-hover:scale-110 transition-transform duration-700"></div>
+
               <div class="relative z-10">
                 <div class="flex items-center mb-6">
-                  <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white shadow-lg mr-4">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white shadow-lg mr-4">
                     <i class="fa fa-user-circle text-xl"></i>
                   </div>
                   <h3 class="h3 text-primary m-0">Über Mich</h3>
                 </div>
-                <div class="content prose prose-lg max-w-none dark:prose-invert">
+                <div
+                  class="content prose prose-lg max-w-none dark:prose-invert">
                   {{ .Content }}
                 </div>
               </div>
             </div>
-            
+
             <!-- Fähigkeiten mit Radar Chart -->
-            <div class="bg-light dark:bg-darkmode-light rounded-3xl shadow-xl p-8 mb-10 relative">
+            <div
+              class="bg-light dark:bg-darkmode-light rounded-3xl shadow-xl p-8 mb-10 relative">
               <div class="flex items-center mb-8">
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white shadow-lg mr-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white shadow-lg mr-4">
                   <i class="fa fa-chart-pie text-xl"></i>
                 </div>
                 <h3 class="h3 text-primary m-0">Meine Fähigkeiten</h3>
               </div>
-              
+
               <div class="grid md:grid-cols-2 gap-8">
                 <!-- Radar Chart (Visuell interessanter als Balken) -->
-                <div class="radar-chart-container relative flex items-center justify-center py-4">
-                  <div class="w-full h-[280px] radar-chart rounded-lg bg-white dark:bg-darkmode-body shadow-md">
+                <div
+                  class="radar-chart-container relative flex items-center justify-center py-4">
+                  <div
+                    class="w-full h-[280px] radar-chart rounded-lg bg-white dark:bg-darkmode-body shadow-md">
                     <!-- Hier würde normalerweise ein JS-basierter Radar-Chart sein, wir simulieren ihn visuell -->
-                    <div class="relative w-full h-full flex items-center justify-center">
+                    <div
+                      class="relative w-full h-full flex items-center justify-center">
                       <!-- Radar Chart Hintergrund -->
-                      <div class="absolute w-[200px] h-[200px] border-2 border-gray-200 rounded-full opacity-20"></div>
-                      <div class="absolute w-[150px] h-[150px] border-2 border-gray-200 rounded-full opacity-20"></div>
-                      <div class="absolute w-[100px] h-[100px] border-2 border-gray-200 rounded-full opacity-20"></div>
-                      <div class="absolute w-[50px] h-[50px] border-2 border-gray-200 rounded-full opacity-20"></div>
-                      
+                      <div
+                        class="absolute w-[200px] h-[200px] border-2 border-gray-200 rounded-full opacity-20"></div>
+                      <div
+                        class="absolute w-[150px] h-[150px] border-2 border-gray-200 rounded-full opacity-20"></div>
+                      <div
+                        class="absolute w-[100px] h-[100px] border-2 border-gray-200 rounded-full opacity-20"></div>
+                      <div
+                        class="absolute w-[50px] h-[50px] border-2 border-gray-200 rounded-full opacity-20"></div>
+
                       <!-- Radar Chart Daten (simuliert) -->
                       <div class="absolute inset-0">
                         <svg viewBox="0 0 200 200" class="w-full h-full">
-                          <polygon points="100,20 160,60 140,140 60,140 40,60" fill="rgba(var(--color-primary-rgb), 0.2)" stroke="rgba(var(--color-primary-rgb), 1)" stroke-width="2"></polygon>
+                          <polygon
+                            points="100,20 160,60 140,140 60,140 40,60"
+                            fill="rgba(var(--color-primary-rgb), 0.2)"
+                            stroke="rgba(var(--color-primary-rgb), 1)"
+                            stroke-width="2"></polygon>
                         </svg>
                       </div>
-                      
+
                       <!-- Labels -->
-                      <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs font-medium">Frontend</div>
-                      <div class="absolute top-1/4 right-0 translate-x-1/2 text-xs font-medium">Design</div>
-                      <div class="absolute bottom-1/4 right-0 translate-x-1/2 text-xs font-medium">Backend</div>
-                      <div class="absolute bottom-1/4 left-0 -translate-x-1/2 text-xs font-medium">Datenbanken</div>
-                      <div class="absolute top-1/4 left-0 -translate-x-1/2 text-xs font-medium">DevOps</div>
+                      <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs font-medium">
+                        Frontend
+                      </div>
+                      <div
+                        class="absolute top-1/4 right-0 translate-x-1/2 text-xs font-medium">
+                        Design
+                      </div>
+                      <div
+                        class="absolute bottom-1/4 right-0 translate-x-1/2 text-xs font-medium">
+                        Backend
+                      </div>
+                      <div
+                        class="absolute bottom-1/4 left-0 -translate-x-1/2 text-xs font-medium">
+                        Datenbanken
+                      </div>
+                      <div
+                        class="absolute top-1/4 left-0 -translate-x-1/2 text-xs font-medium">
+                        DevOps
+                      </div>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- Fähigkeiten List - Kreatives Design -->
                 <div class="space-y-4">
                   <div class="group">
                     <div class="flex justify-between mb-1 items-center">
-                      <span class="font-medium flex items-center"><i class="fa fa-code text-primary mr-2"></i> Webentwicklung</span>
-                      <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-sm group-hover:scale-110 transition-transform">90%</span>
+                      <span class="font-medium flex items-center"
+                        ><i class="fa fa-code text-primary mr-2"></i>
+                        Webentwicklung</span
+                      >
+                      <span
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-sm group-hover:scale-110 transition-transform"
+                        >90%</span
+                      >
                     </div>
                     <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div class="h-full w-[90%] rounded-full bg-gradient-to-r from-primary to-secondary relative">
-                        <div class="absolute inset-0 bg-white opacity-20 animate-pulse-slow"></div>
+                      <div
+                        class="h-full w-[90%] rounded-full bg-gradient-to-r from-primary to-secondary relative">
+                        <div
+                          class="absolute inset-0 bg-white opacity-20 animate-pulse-slow"></div>
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="group">
                     <div class="flex justify-between mb-1 items-center">
-                      <span class="font-medium flex items-center"><i class="fa fa-palette text-primary mr-2"></i> UX/UI Design</span>
-                      <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-sm group-hover:scale-110 transition-transform">85%</span>
+                      <span class="font-medium flex items-center"
+                        ><i class="fa fa-palette text-primary mr-2"></i> UX/UI
+                        Design</span
+                      >
+                      <span
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-sm group-hover:scale-110 transition-transform"
+                        >85%</span
+                      >
                     </div>
                     <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div class="h-full w-[85%] rounded-full bg-gradient-to-r from-primary to-secondary relative">
-                        <div class="absolute inset-0 bg-white opacity-20 animate-pulse-slow"></div>
+                      <div
+                        class="h-full w-[85%] rounded-full bg-gradient-to-r from-primary to-secondary relative">
+                        <div
+                          class="absolute inset-0 bg-white opacity-20 animate-pulse-slow"></div>
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="group">
                     <div class="flex justify-between mb-1 items-center">
-                      <span class="font-medium flex items-center"><i class="fa fa-database text-primary mr-2"></i> Backend</span>
-                      <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-sm group-hover:scale-110 transition-transform">85%</span>
+                      <span class="font-medium flex items-center"
+                        ><i class="fa fa-database text-primary mr-2"></i>
+                        Backend</span
+                      >
+                      <span
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-sm group-hover:scale-110 transition-transform"
+                        >85%</span
+                      >
                     </div>
                     <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div class="h-full w-[85%] rounded-full bg-gradient-to-r from-primary to-secondary relative">
-                        <div class="absolute inset-0 bg-white opacity-20 animate-pulse-slow"></div>
+                      <div
+                        class="h-full w-[85%] rounded-full bg-gradient-to-r from-primary to-secondary relative">
+                        <div
+                          class="absolute inset-0 bg-white opacity-20 animate-pulse-slow"></div>
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="group">
                     <div class="flex justify-between mb-1 items-center">
-                      <span class="font-medium flex items-center"><i class="fa fa-sitemap text-primary mr-2"></i> DevOps</span>
-                      <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-sm group-hover:scale-110 transition-transform">75%</span>
+                      <span class="font-medium flex items-center"
+                        ><i class="fa fa-sitemap text-primary mr-2"></i>
+                        DevOps</span
+                      >
+                      <span
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold text-sm group-hover:scale-110 transition-transform"
+                        >75%</span
+                      >
                     </div>
                     <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div class="h-full w-[75%] rounded-full bg-gradient-to-r from-primary to-secondary relative">
-                        <div class="absolute inset-0 bg-white opacity-20 animate-pulse-slow"></div>
+                      <div
+                        class="h-full w-[75%] rounded-full bg-gradient-to-r from-primary to-secondary relative">
+                        <div
+                          class="absolute inset-0 bg-white opacity-20 animate-pulse-slow"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <!-- Timeline - Beruflicher Werdegang -->
-            <div class="bg-light dark:bg-darkmode-light rounded-3xl shadow-xl p-8 mb-10">
+            <div
+              class="bg-light dark:bg-darkmode-light rounded-3xl shadow-xl p-8 mb-10">
               <div class="flex items-center mb-8">
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white shadow-lg mr-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white shadow-lg mr-4">
                   <i class="fa fa-history text-xl"></i>
                 </div>
                 <h3 class="h3 text-primary m-0">Mein Werdegang</h3>
               </div>
-              
+
               <!-- Kreative Timeline -->
               <div class="relative timeline">
                 <!-- Timeline-Linie -->
-                <div class="absolute top-0 left-[15px] bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary"></div>
-                
+                <div
+                  class="absolute top-0 left-[15px] bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary"></div>
+
                 <!-- Timeline Items -->
                 <div class="space-y-10">
                   <!-- Eintrag 1 -->
                   <div class="timeline-item relative pl-10">
-                    <div class="absolute left-0 top-0 w-[30px] h-[30px] bg-white dark:bg-darkmode-body rounded-full border-4 border-primary flex items-center justify-center z-10">
+                    <div
+                      class="absolute left-0 top-0 w-[30px] h-[30px] bg-white dark:bg-darkmode-body rounded-full border-4 border-primary flex items-center justify-center z-10">
                       <div class="w-2 h-2 bg-primary rounded-full"></div>
                     </div>
                     <div class="timeline-content">
-                      <div class="bg-white dark:bg-darkmode-body rounded-xl p-5 shadow-lg transform-gpu transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                      <div
+                        class="bg-white dark:bg-darkmode-body rounded-xl p-5 shadow-lg transform-gpu transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                         <div class="flex justify-between mb-2">
-                          <h4 class="font-bold text-lg text-primary">Senior Entwickler</h4>
-                          <span class="text-sm py-1 px-3 bg-primary/10 text-primary rounded-full">2020 - Heute</span>
+                          <h4 class="font-bold text-lg text-primary">
+                            Senior Entwickler
+                          </h4>
+                          <span
+                            class="text-sm py-1 px-3 bg-primary/10 text-primary rounded-full"
+                            >2020 - Heute</span
+                          >
                         </div>
-                        <p class="text-gray-600 dark:text-darkmode-text">Leitung von Schlüsselprojekten für internationale Kunden. Implementierung moderner Web-Architekturen und Mentoring von Junior-Entwicklern.</p>
+                        <p class="text-gray-600 dark:text-darkmode-text">
+                          Leitung von Schlüsselprojekten für internationale
+                          Kunden. Implementierung moderner Web-Architekturen und
+                          Mentoring von Junior-Entwicklern.
+                        </p>
                       </div>
                     </div>
                   </div>
-                  
+
                   <!-- Eintrag 2 -->
                   <div class="timeline-item relative pl-10">
-                    <div class="absolute left-0 top-0 w-[30px] h-[30px] bg-white dark:bg-darkmode-body rounded-full border-4 border-secondary flex items-center justify-center z-10">
+                    <div
+                      class="absolute left-0 top-0 w-[30px] h-[30px] bg-white dark:bg-darkmode-body rounded-full border-4 border-secondary flex items-center justify-center z-10">
                       <div class="w-2 h-2 bg-secondary rounded-full"></div>
                     </div>
                     <div class="timeline-content">
-                      <div class="bg-white dark:bg-darkmode-body rounded-xl p-5 shadow-lg transform-gpu transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                      <div
+                        class="bg-white dark:bg-darkmode-body rounded-xl p-5 shadow-lg transform-gpu transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                         <div class="flex justify-between mb-2">
-                          <h4 class="font-bold text-lg text-primary">Web Developer</h4>
-                          <span class="text-sm py-1 px-3 bg-primary/10 text-primary rounded-full">2016 - 2020</span>
+                          <h4 class="font-bold text-lg text-primary">
+                            Web Developer
+                          </h4>
+                          <span
+                            class="text-sm py-1 px-3 bg-primary/10 text-primary rounded-full"
+                            >2016 - 2020</span
+                          >
                         </div>
-                        <p class="text-gray-600 dark:text-darkmode-text">Entwicklung anspruchsvoller Web-Applikationen. Spezialisierung auf responsive Frontend-Entwicklung und Backend-Integration.</p>
+                        <p class="text-gray-600 dark:text-darkmode-text">
+                          Entwicklung anspruchsvoller Web-Applikationen.
+                          Spezialisierung auf responsive Frontend-Entwicklung
+                          und Backend-Integration.
+                        </p>
                       </div>
                     </div>
                   </div>
-                  
+
                   <!-- Eintrag 3 -->
                   <div class="timeline-item relative pl-10">
-                    <div class="absolute left-0 top-0 w-[30px] h-[30px] bg-white dark:bg-darkmode-body rounded-full border-4 border-primary flex items-center justify-center z-10">
+                    <div
+                      class="absolute left-0 top-0 w-[30px] h-[30px] bg-white dark:bg-darkmode-body rounded-full border-4 border-primary flex items-center justify-center z-10">
                       <div class="w-2 h-2 bg-primary rounded-full"></div>
                     </div>
                     <div class="timeline-content">
-                      <div class="bg-white dark:bg-darkmode-body rounded-xl p-5 shadow-lg transform-gpu transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                      <div
+                        class="bg-white dark:bg-darkmode-body rounded-xl p-5 shadow-lg transform-gpu transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                         <div class="flex justify-between mb-2">
-                          <h4 class="font-bold text-lg text-primary">Studium</h4>
-                          <span class="text-sm py-1 px-3 bg-primary/10 text-primary rounded-full">2012 - 2016</span>
+                          <h4 class="font-bold text-lg text-primary">
+                            Studium
+                          </h4>
+                          <span
+                            class="text-sm py-1 px-3 bg-primary/10 text-primary rounded-full"
+                            >2012 - 2016</span
+                          >
                         </div>
-                        <p class="text-gray-600 dark:text-darkmode-text">Abschluss in Informatik mit Fokus auf Webentwicklung und User Experience Design. Diverse Projekte zur Vertiefung praktischer Kenntnisse.</p>
+                        <p class="text-gray-600 dark:text-darkmode-text">
+                          Abschluss in Informatik mit Fokus auf Webentwicklung
+                          und User Experience Design. Diverse Projekte zur
+                          Vertiefung praktischer Kenntnisse.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <!-- 3D Technologie-Karten -->
-            <div class="bg-light dark:bg-darkmode-light rounded-3xl shadow-xl p-8">
+            <div
+              class="bg-light dark:bg-darkmode-light rounded-3xl shadow-xl p-8">
               <div class="flex items-center mb-8">
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white shadow-lg mr-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white shadow-lg mr-4">
                   <i class="fa fa-laptop-code text-xl"></i>
                 </div>
                 <h3 class="h3 text-primary m-0">Technologien</h3>
               </div>
-              
+
               <!-- 3D Tech Cards -->
               <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                 <!-- HTML Card -->
                 <div class="tech-card relative group perspective">
-                  <div class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                  <div
+                    class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
                     <!-- Front -->
-                    <div class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
+                    <div
+                      class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
                       <i class="fab fa-html5 text-4xl text-orange-500 mb-3"></i>
                       <span class="font-bold">HTML5</span>
                     </div>
                     <!-- Back -->
-                    <div class="tech-card-back absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                    <div
+                      class="tech-card-back absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
                       <h5 class="font-bold mb-2">HTML5</h5>
-                      <p class="text-xs text-center">Semantische Struktur, Barrierefreiheit, Standards</p>
+                      <p class="text-xs text-center">
+                        Semantische Struktur, Barrierefreiheit, Standards
+                      </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- CSS Card -->
                 <div class="tech-card relative group perspective">
-                  <div class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
-                    <div class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
-                      <i class="fab fa-css3-alt text-4xl text-blue-500 mb-3"></i>
+                  <div
+                    class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                    <div
+                      class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
+                      <i
+                        class="fab fa-css3-alt text-4xl text-blue-500 mb-3"></i>
                       <span class="font-bold">CSS3</span>
                     </div>
-                    <div class="tech-card-back absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                    <div
+                      class="tech-card-back absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
                       <h5 class="font-bold mb-2">CSS3</h5>
-                      <p class="text-xs text-center">Flexbox, Grid, Animationen, Responsive Design</p>
+                      <p class="text-xs text-center">
+                        Flexbox, Grid, Animationen, Responsive Design
+                      </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- JS Card -->
                 <div class="tech-card relative group perspective">
-                  <div class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
-                    <div class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
+                  <div
+                    class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                    <div
+                      class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
                       <i class="fab fa-js text-4xl text-yellow-500 mb-3"></i>
                       <span class="font-bold">JavaScript</span>
                     </div>
-                    <div class="tech-card-back absolute inset-0 bg-gradient-to-br from-yellow-500 to-yellow-700 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                    <div
+                      class="tech-card-back absolute inset-0 bg-gradient-to-br from-yellow-500 to-yellow-700 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
                       <h5 class="font-bold mb-2">JavaScript</h5>
-                      <p class="text-xs text-center">ES6+, DOM-Manipulation, Async/Await, Frameworks</p>
+                      <p class="text-xs text-center">
+                        ES6+, DOM-Manipulation, Async/Await, Frameworks
+                      </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- React Card -->
                 <div class="tech-card relative group perspective">
-                  <div class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
-                    <div class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
+                  <div
+                    class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                    <div
+                      class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
                       <i class="fab fa-react text-4xl text-blue-400 mb-3"></i>
                       <span class="font-bold">React</span>
                     </div>
-                    <div class="tech-card-back absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                    <div
+                      class="tech-card-back absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
                       <h5 class="font-bold mb-2">React</h5>
-                      <p class="text-xs text-center">Hooks, Redux, Context API, React Router</p>
+                      <p class="text-xs text-center">
+                        Hooks, Redux, Context API, React Router
+                      </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- Node.js Card -->
                 <div class="tech-card relative group perspective">
-                  <div class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
-                    <div class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
+                  <div
+                    class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                    <div
+                      class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
                       <i class="fab fa-node text-4xl text-green-600 mb-3"></i>
                       <span class="font-bold">Node.js</span>
                     </div>
-                    <div class="tech-card-back absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                    <div
+                      class="tech-card-back absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
                       <h5 class="font-bold mb-2">Node.js</h5>
-                      <p class="text-xs text-center">Express, REST APIs, Serverless, Microservices</p>
+                      <p class="text-xs text-center">
+                        Express, REST APIs, Serverless, Microservices
+                      </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- PHP Card -->
                 <div class="tech-card relative group perspective">
-                  <div class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
-                    <div class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
+                  <div
+                    class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                    <div
+                      class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
                       <i class="fab fa-php text-4xl text-purple-600 mb-3"></i>
                       <span class="font-bold">PHP</span>
                     </div>
-                    <div class="tech-card-back absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                    <div
+                      class="tech-card-back absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
                       <h5 class="font-bold mb-2">PHP</h5>
-                      <p class="text-xs text-center">Modern PHP, Composer, Laravel, WordPress</p>
+                      <p class="text-xs text-center">
+                        Modern PHP, Composer, Laravel, WordPress
+                      </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- Python Card -->
                 <div class="tech-card relative group perspective">
-                  <div class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
-                    <div class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
+                  <div
+                    class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                    <div
+                      class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
                       <i class="fab fa-python text-4xl text-blue-600 mb-3"></i>
                       <span class="font-bold">Python</span>
                     </div>
-                    <div class="tech-card-back absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                    <div
+                      class="tech-card-back absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
                       <h5 class="font-bold mb-2">Python</h5>
-                      <p class="text-xs text-center">Django, Flask, Data Science, Automation</p>
+                      <p class="text-xs text-center">
+                        Django, Flask, Data Science, Automation
+                      </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- SQL Card -->
                 <div class="tech-card relative group perspective">
-                  <div class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
-                    <div class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
+                  <div
+                    class="tech-card-inner relative w-full h-[150px] transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                    <div
+                      class="tech-card-front absolute inset-0 bg-white dark:bg-darkmode-body rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden">
                       <i class="fa fa-database text-4xl text-gray-600 mb-3"></i>
                       <span class="font-bold">Datenbanken</span>
                     </div>
-                    <div class="tech-card-back absolute inset-0 bg-gradient-to-br from-gray-600 to-gray-800 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                    <div
+                      class="tech-card-back absolute inset-0 bg-gradient-to-br from-gray-600 to-gray-800 text-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center backface-hidden rotate-y-180">
                       <h5 class="font-bold mb-2">Datenbanken</h5>
-                      <p class="text-xs text-center">MySQL, PostgreSQL, MongoDB, Redis</p>
+                      <p class="text-xs text-center">
+                        MySQL, PostgreSQL, MongoDB, Redis
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -384,73 +574,101 @@
   <!-- CSS für Animation und 3D-Effekte -->
   <style>
     @keyframes orbit-1 {
-      0% { transform: translate(-50%, -50%) rotate(0deg) translateX(60px) rotate(0deg); }
-      100% { transform: translate(-50%, -50%) rotate(360deg) translateX(60px) rotate(-360deg); }
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(60px)
+          rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(60px)
+          rotate(-360deg);
+      }
     }
-    
+
     @keyframes orbit-2 {
-      0% { transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg); }
-      100% { transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg); }
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(100px)
+          rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(100px)
+          rotate(-360deg);
+      }
     }
-    
+
     @keyframes orbit-3 {
-      0% { transform: translate(-50%, -50%) rotate(0deg) translateX(40px) rotate(0deg); }
-      100% { transform: translate(-50%, -50%) rotate(360deg) translateX(40px) rotate(-360deg); }
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(40px)
+          rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(40px)
+          rotate(-360deg);
+      }
     }
-    
+
     @keyframes rotate-slow {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
-    
+
     @keyframes pulse-slow {
-      0% { opacity: 0.1; }
-      50% { opacity: 0.3; }
-      100% { opacity: 0.1; }
+      0% {
+        opacity: 0.1;
+      }
+      50% {
+        opacity: 0.3;
+      }
+      100% {
+        opacity: 0.1;
+      }
     }
-    
+
     .animate-orbit-1 {
       top: 50%;
       left: 50%;
       animation: orbit-1 12s linear infinite;
     }
-    
+
     .animate-orbit-2 {
       top: 50%;
       left: 50%;
       animation: orbit-2 18s linear infinite;
     }
-    
+
     .animate-orbit-3 {
       top: 50%;
       left: 50%;
       animation: orbit-3 7s linear infinite;
     }
-    
+
     .animate-rotate-slow {
       animation: rotate-slow 8s linear infinite;
     }
-    
+
     .animate-pulse-slow {
       animation: pulse-slow 3s ease-in-out infinite;
     }
-    
+
     .perspective {
       perspective: 1000px;
     }
-    
+
     .transform-style-3d {
       transform-style: preserve-3d;
     }
-    
+
     .backface-hidden {
       backface-visibility: hidden;
     }
-    
+
     .rotate-y-180 {
       transform: rotateY(180deg);
     }
-    
+
     .group:hover .group-hover\:rotate-y-180 {
       transform: rotateY(180deg);
     }

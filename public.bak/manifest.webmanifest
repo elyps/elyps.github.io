@@ -3,21 +3,11 @@
   "short_name": "Hugoplate",
   "lang": "en-us",
   "display": "fullscreen",
-  "orientation" : "portrait",
+  "orientation": "portrait",
   "start_url": "//localhost:1313/?utm_source=web_app_manifest",
   "background_color": "#fff",
   "theme_color": "#000",
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   "icons": [
     {
       "src": "/images/favicon_hu_5e94ddfe1aebd77f.png",
@@ -51,6 +41,4 @@
       "type": "image/png"
     }
   ]
-  
-  
 }

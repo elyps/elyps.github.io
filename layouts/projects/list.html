@@ -19,32 +19,39 @@
                   width="445"
                   height="230" />
               {{ else }}
-                <div class="project-image-placeholder mb-4 rounded"
-                     style="background-color: {{ index (slice "#4CAF50" "#1E90FF" "#FF6347" "#FFD700" "#9C27B0") (mod .Ordinal 5) }};">
-                  <div class="project-image-placeholder-text">{{ slicestr .Title 0 1 }}</div>
+                <div
+                  class="project-image-placeholder mb-4 rounded"
+                  style="background-color: {{ index (slice "#4CAF50" "#1E90FF" "#FF6347" "#FFD700" "#9C27B0") (mod .Ordinal 5) }};">
+                  <div class="project-image-placeholder-text">
+                    {{ slicestr .Title 0 1 }}
+                  </div>
                 </div>
               {{ end }}
               <div class="card-body p-0">
                 <h3 class="h4 mb-3 mt-4">
-                  <a href="{{ .RelPermalink }}" class="text-text-dark hover:text-primary dark:text-darkmode-light dark:hover:text-primary block">
+                  <a
+                    href="{{ .RelPermalink }}"
+                    class="text-text-dark hover:text-primary dark:text-darkmode-light dark:hover:text-primary block">
                     {{ .Title }}
                   </a>
                 </h3>
                 <p class="mb-3">{{ .Params.description }}</p>
-                
+
                 <div class="mb-4">
                   {{ range .Params.categories }}
                     <span class="project-category">{{ . }}</span>
                   {{ end }}
                 </div>
-                
+
                 <div class="mb-4">
                   {{ range .Params.tags }}
                     <span class="project-tag">{{ . }}</span>
                   {{ end }}
                 </div>
-                
-                <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+
+                <a
+                  class="btn btn-outline-primary btn-sm"
+                  href="{{ .RelPermalink }}">
                   Mehr erfahren →
                 </a>
               </div>
@@ -54,4 +61,4 @@
       </div>
     </div>
   </section>
-{{ end }} 
+{{ end }}

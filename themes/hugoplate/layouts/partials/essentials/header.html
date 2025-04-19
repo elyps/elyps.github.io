@@ -1,43 +1,51 @@
 <header class="header">
-    <nav class="navbar container">
-        <div class="flex justify-between items-center">
-            <!-- Logo -->
-            <div class="py-6">
-                <a class="navbar-brand flex items-center" href="{{ site.Home.RelPermalink }}">
-                    <!-- Logo Image -->
-                    {{ if site.Params.logo }}
-                    <img src="{{ site.Params.logo | absURL }}" width="{{ site.Params.logo_width | default `40px` }}"
-                        height="{{ site.Params.logo_height | default `40px` }}" alt="{{ site.Title }}"
-                        class="rounded-full max-h-10" />
-                    {{ end }}
-                    
-                    <!-- Logo Text - Always show -->
-                    <span class="logo-text ml-2">{{ site.Params.logo_text }}</span>
-                </a>
-            </div>
+  <nav class="navbar container">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="py-6">
+        <a
+          class="navbar-brand flex items-center"
+          href="{{ site.Home.RelPermalink }}">
+          <!-- Logo Image -->
+          {{ if site.Params.logo }}
+            <img
+              src="{{ site.Params.logo | absURL }}"
+              width="{{ site.Params.logo_width | default `40px` }}"
+              height="{{ site.Params.logo_height | default `40px` }}"
+              alt="{{ site.Title }}"
+              class="rounded-full max-h-10" />
+          {{ end }}
 
-            <!-- Navigation -->
-            <div>
-                <ul class="flex space-x-4">
-                    {{ range site.Menus.main }}
-                    <li>
-                        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
 
-            <!-- Actions -->
-            <div class="flex items-center space-x-3">
-                {{ partial "components/language-switcher" (dict "Context" . "Class" "px-2 py-1") }}
-                {{ partial "components/theme-switcher" (dict "Class" "") }}
+          <!-- Logo Text - Always show -->
+          <span class="logo-text ml-2">{{ site.Params.logo_text }}</span>
+        </a>
+      </div>
 
-                {{ if site.Params.navigation_button.enable }}
-                <a href="{{ site.Params.navigation_button.link | relLangURL }}" class="btn btn-primary">
-                    {{ site.Params.navigation_button.label }}
-                </a>
-                {{ end }}
-            </div>
-        </div>
-    </nav>
+      <!-- Navigation -->
+      <div>
+        <ul class="flex space-x-4">
+          {{ range site.Menus.main }}
+            <li>
+              <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex items-center space-x-3">
+        {{ partial "components/language-switcher" (dict "Context" . "Class" "px-2 py-1") }}
+        {{ partial "components/theme-switcher" (dict "Class" "") }}
+
+        {{ if site.Params.navigation_button.enable }}
+          <a
+            href="{{ site.Params.navigation_button.link | relLangURL }}"
+            class="btn btn-primary">
+            {{ site.Params.navigation_button.label }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </nav>
 </header>

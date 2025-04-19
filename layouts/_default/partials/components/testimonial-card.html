@@ -1,5 +1,6 @@
 {{ $avatar := .avatar }}
 
+
 <div class="swiper-slide">
   <div class="bg-light dark:bg-darkmode-light rounded-lg px-7 py-10">
     <div class="text-text-dark dark:text-white">
@@ -20,7 +21,12 @@
     <div class="mt-11 flex items-center">
       <div class="text-text-dark dark:text-white">
         {{ if $avatar }}
-          <img src="{{ $avatar | absURL }}" class="testimonial-avatar" alt="{{ .name }}" width="80" height="80" />
+          <img
+            src="{{ $avatar | absURL }}"
+            class="testimonial-avatar"
+            alt="{{ .name }}"
+            width="80"
+            height="80" />
         {{ else }}
           <div class="testimonial-avatar-fallback">
             {{ slicestr .name 0 1 }}
@@ -37,4 +43,4 @@
       </div>
     </div>
   </div>
-</div> 
+</div>

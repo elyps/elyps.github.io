@@ -19,4 +19,4 @@ new Swiper(".testimonial-slider", {
       slidesPerView: 3,
     },
   },
-}); 
+});

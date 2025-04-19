@@ -1,51 +1,54 @@
 <!doctype html>
-<html itemscope class="{{- if not site.Params.theme_switcher -}}
+<html
+  itemscope
+  class="{{- if not site.Params.theme_switcher -}}
     {{- site.Params.theme_default -}}
-  {{- end -}}" lang="{{ site.LanguageCode | default `de-de` }}" itemtype="http://schema.org/WebPage">
-
-<head>
-  <!-- head (don't cache it) -->
-  {{ partial "essentials/head.html" . }}
-
-
-  <!-- style (always cache it) -->
-  {{ partialCached "essentials/style.html" . }}
-
-</head>
-
-<body>
-  <!-- cache partial only in production -->
-  {{ if hugo.IsProduction }}
-  {{ partialCached "preloader.html" . }}
-  {{ partialCached "gtm-noscript.html" . }}
-  {{ else }}
-  {{ partial "preloader.html" . }}
+  {{- end -}}
+  "
+  lang="{{ site.LanguageCode | default `de-de` }}"
+  itemtype="http://schema.org/WebPage">
+  <head>
+    <!-- head (don't cache it) -->
+    {{ partial "essentials/head.html" . }}
 
 
-  <!-- tailwind size indicator -->
-  {{ partial "components/tw-size-indicator.html" . }}
-  {{ end }}
+    <!-- style (always cache it) -->
+    {{ partialCached "essentials/style.html" . }}
+
+  </head>
+
+  <body>
+    <!-- cache partial only in production -->
+    {{ if hugo.IsProduction }}
+      {{ partialCached "preloader.html" . }}
+      {{ partialCached "gtm-noscript.html" . }}
+    {{ else }}
+      {{ partial "preloader.html" . }}
 
 
-  <!-- announcement -->
-  {{ partialCached "announcement.html" . }}
+      <!-- tailwind size indicator -->
+      {{ partial "components/tw-size-indicator.html" . }}
+    {{ end }}
 
 
-  <!-- header (don't cache it) -->
-  {{ partial "essentials/header.html" . }}
-  {{ partial "search-modal.html" (dict "Context" . ) }}
+    <!-- announcement -->
+    {{ partialCached "announcement.html" . }}
 
 
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-
-  <!-- footer -->
-  {{ partial "essentials/footer.html" . }}
+    <!-- header (don't cache it) -->
+    {{ partial "essentials/header.html" . }}
+    {{ partial "search-modal.html" (dict "Context" . ) }}
 
 
-  <!-- script (always cache it) -->
-  {{ partialCached "essentials/script.html" . }}
-</body>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
 
+    <!-- footer -->
+    {{ partial "essentials/footer.html" . }}
+
+
+    <!-- script (always cache it) -->
+    {{ partialCached "essentials/script.html" . }}
+  </body>
 </html>

@@ -86,7 +86,10 @@
         <div class="row mb-12 text-center">
           <div class="col-lg-8 mx-auto">
             <h2 class="mb-4">Was meine Kunden sagen</h2>
-            <p>Lesen Sie, wie ich anderen Unternehmen geholfen habe, ihre Ziele zu erreichen.</p>
+            <p>
+              Lesen Sie, wie ich anderen Unternehmen geholfen habe, ihre Ziele
+              zu erreichen.
+            </p>
           </div>
         </div>
         <div class="row">
@@ -94,12 +97,13 @@
             <div class="swiper testimonial-slider">
               <div class="swiper-wrapper">
                 {{ range $testimonials }}
-                  {{ partial "components/testimonial-card.html" (dict 
+                  {{ partial "components/testimonial-card.html" (dict
                     "content" .Content
                     "name" .Params.name
                     "designation" .Params.designation
                     "avatar" .Params.avatar
-                  ) }}
+                    )
+                  }}
                 {{ end }}
               </div>
               <div
@@ -122,24 +126,27 @@
           <div class="col-12">
             <div class="swiper testimonial-slider">
               <div class="swiper-wrapper">
-                {{ partial "components/testimonial-card.html" (dict 
+                {{ partial "components/testimonial-card.html" (dict
                   "content" "Bastian hat unsere Webanwendung mit modernsten Technologien entwickelt. Seine Expertise in Cloud-Architektur und DevOps hat uns geholfen, eine skalierbare und zuverlässige Lösung zu implementieren."
                   "name" "Sandra Müller"
                   "designation" "CTO bei TechStart GmbH"
                   "avatar" "images/testimonials/sandra-mueller.png"
-                ) }}
-                {{ partial "components/testimonial-card.html" (dict 
+                  )
+                }}
+                {{ partial "components/testimonial-card.html" (dict
                   "content" "Die Zusammenarbeit mit Bastian war äußerst produktiv. Seine Fähigkeit, komplexe Probleme zu lösen und innovative Lösungen zu entwickeln, hat unser Projekt vorangebracht."
                   "name" "Anna Schmidt"
                   "designation" "Projektmanagerin bei Digital Solutions AG"
                   "avatar" "images/testimonials/anna-schmidt.png"
-                ) }}
-                {{ partial "components/testimonial-card.html" (dict 
+                  )
+                }}
+                {{ partial "components/testimonial-card.html" (dict
                   "content" "Bastians technische Expertise und sein Engagement für Qualität haben unsere Erwartungen übertroffen. Er hat nicht nur den Code geschrieben, sondern auch wertvolle Einblicke in Best Practices gegeben."
                   "name" "Thomas Weber"
                   "designation" "Geschäftsführer bei WebTech GmbH"
                   "avatar" "images/testimonials/thomas-weber.png"
-                ) }}
+                  )
+                }}
               </div>
               <div
                 class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>

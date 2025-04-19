@@ -1,33 +1,40 @@
 <!-- Check if logo is enabled for both modes -->
 {{ if or site.Params.logo site.Params.logo_darkmode }}
-<!-- Logo -->
-<div class="flex items-center">
+  <!-- Logo -->
+  <div class="flex items-center">
     <!-- Logo Image -->
     <div class="mr-2">
-        {{ if site.Params.logo }}
+      {{ if site.Params.logo }}
         <!-- Light mode logo -->
-        <img src="{{ site.Params.logo | absURL }}" width="{{ site.Params.logo_width | default `240px` }}"
-            height="{{ site.Params.logo_height | default `70px` }}" alt="{{ site.Title }}"
-            class="inline-block dark:hidden max-h-20 rounded-full" />
-        {{ end }}
+        <img
+          src="{{ site.Params.logo | absURL }}"
+          width="{{ site.Params.logo_width | default `240px` }}"
+          height="{{ site.Params.logo_height | default `70px` }}"
+          alt="{{ site.Title }}"
+          class="inline-block dark:hidden max-h-20 rounded-full" />
+      {{ end }}
 
-        {{ if site.Params.logo_darkmode }}
+      {{ if site.Params.logo_darkmode }}
         <!-- Dark mode logo -->
-        <img src="{{ site.Params.logo_darkmode | absURL }}" width="{{ site.Params.logo_width | default `240px` }}"
-            height="{{ site.Params.logo_height | default `70px` }}" alt="{{ site.Title }}"
-            class="hidden dark:inline-block max-h-20 rounded-full" />
-        {{ end }}
+        <img
+          src="{{ site.Params.logo_darkmode | absURL }}"
+          width="{{ site.Params.logo_width | default `240px` }}"
+          height="{{ site.Params.logo_height | default `70px` }}"
+          alt="{{ site.Title }}"
+          class="hidden dark:inline-block max-h-20 rounded-full" />
+      {{ end }}
     </div>
 
     <!-- Logo Text - Always show regardless of logo presence -->
-    <span class="text-text-dark dark:text-darkmode-text-dark font-bold logo-text">
-        {{ site.Params.logo_text }}
+    <span
+      class="text-text-dark dark:text-darkmode-text-dark font-bold logo-text">
+      {{ site.Params.logo_text }}
     </span>
-</div>
+  </div>
 
-<!-- Display logo text only when logo is missing -->
+  <!-- Display logo text only when logo is missing -->
 {{ else if site.Params.logo_text }}
-<span class="text-text-dark dark:text-darkmode-text-dark font-bold logo-text">
+  <span class="text-text-dark dark:text-darkmode-text-dark font-bold logo-text">
     {{ site.Params.logo_text }}
-</span>
+  </span>
 {{ end }}

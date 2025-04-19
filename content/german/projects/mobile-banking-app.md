@@ -45,5 +45,5 @@ Nach dem Launch konnte die App in den ersten drei Monaten über 50.000 Downloads
 ## Kundenfeedback
 
 > "Die Zusammenarbeit war außerordentlich produktiv. Das tiefe Verständnis für sowohl technische als auch regulatorische Anforderungen im Finanzbereich hat uns beeindruckt. Die App hat unsere Kundeninteraktion revolutioniert und uns geholfen, neue Marktsegmente zu erschließen."
-> 
-> — Julia Becker, CTO 
+>
+> — Julia Becker, CTO

@@ -44,5 +44,5 @@ Nach dem Launch konnte der Kunde eine signifikante Steigerung der Conversion-Rat
 ## Kundenfeedback
 
 > "Die neue Plattform hat unsere Erwartungen übertroffen. Besonders beeindruckend ist die Geschwindigkeit der Seite und wie einfach sie zu verwalten ist. Unsere Verkaufszahlen sind deutlich gestiegen, seit wir die neue Lösung implementiert haben."
-> 
-> — Michael Hartmann, CEO 
+>
+> — Michael Hartmann, CEO

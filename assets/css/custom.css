@@ -1,134 +1,136 @@
 /* Add your own custom styles here */
 
 /* Gelber Theme-Switcher */
-.theme-switcher input[type="checkbox"]+label {
-    background-color: #FFD700 !important;
-    /* Gold */
-    border-color: #DAA520 !important;
-    /* Goldenrod */
+.theme-switcher input[type="checkbox"] + label {
+  background-color: #ffd700 !important;
+  /* Gold */
+  border-color: #daa520 !important;
+  /* Goldenrod */
 }
 
-.theme-switcher input[type="checkbox"]+label svg {
-    color: #8B4513 !important;
-    /* Dunkles Braun für besseren Kontrast */
+.theme-switcher input[type="checkbox"] + label svg {
+  color: #8b4513 !important;
+  /* Dunkles Braun für besseren Kontrast */
 }
 
-.theme-switcher input[type="checkbox"]:checked+label {
-    background-color: #FFD700 !important;
-    /* Gold */
+.theme-switcher input[type="checkbox"]:checked + label {
+  background-color: #ffd700 !important;
+  /* Gold */
 }
 
 /* Grüne Haken auf der Startseite */
 input[type="checkbox"]:checked {
-    background-color: #4CAF50 !important;
-    border-color: #4CAF50 !important;
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
 }
 
 input[type="checkbox"]:checked::before {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 /* Grüne Font Awesome Checkmark-Icons */
-.fa-check, 
+.fa-check,
 i.fa.fa-check {
-    color: #4CAF50 !important; /* Grün */
+  color: #4caf50 !important; /* Grün */
 }
 
 /* Testimonial Avatar Styles */
 .testimonial-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--primary-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-avatar-fallback {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    border: 3px solid var(--primary-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Projekt-Karten */
 .project-card {
-    transition: transform 0.3s, box-shadow 0.3s !important;
-    border-radius: 10px !important;
-    overflow: hidden !important;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
 }
 
 .project-card:hover {
-    transform: translateY(-5px) !important;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
 .project-image {
-    height: 200px !important;
-    object-fit: cover !important;
-    width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  width: 100% !important;
 }
 
 /* Projekt-Bildplatzhalter */
 .project-image-placeholder {
-    height: 200px !important;
-    width: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: white !important;
+  height: 200px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white !important;
 }
 
 .project-image-placeholder-text {
-    font-size: 72px !important;
-    font-weight: bold !important;
-    text-transform: uppercase !important;
+  font-size: 72px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
 }
 
 .project-detail-image-placeholder {
-    height: 400px !important;
-    width: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: white !important;
+  height: 400px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white !important;
 }
 
 .project-detail-image-placeholder-text {
-    font-size: 120px !important;
-    font-weight: bold !important;
-    text-transform: uppercase !important;
+  font-size: 120px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
 }
 
 .project-category {
-    display: inline-block !important;
-    padding: 4px 8px !important;
-    margin-right: 8px !important;
-    margin-bottom: 8px !important;
-    background-color: #f0f0f0 !important;
-    border-radius: 4px !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-    color: #333 !important;
+  display: inline-block !important;
+  padding: 4px 8px !important;
+  margin-right: 8px !important;
+  margin-bottom: 8px !important;
+  background-color: #f0f0f0 !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #333 !important;
 }
 
 .project-tag {
-    display: inline-block !important;
-    padding: 2px 6px !important;
-    margin-right: 5px !important;
-    margin-bottom: 5px !important;
-    background-color: #e0e0e0 !important;
-    border-radius: 3px !important;
-    font-size: 11px !important;
-    color: #555 !important;
+  display: inline-block !important;
+  padding: 2px 6px !important;
+  margin-right: 5px !important;
+  margin-bottom: 5px !important;
+  background-color: #e0e0e0 !important;
+  border-radius: 3px !important;
+  font-size: 11px !important;
+  color: #555 !important;
 }
 
 /* Rundes Logo und SVG */
@@ -137,76 +139,76 @@ svg,
 .navbar a.navbar-brand svg,
 .navbar-brand img,
 .navbar a img {
-    border-radius: 9999px !important;
-    overflow: hidden;
+  border-radius: 9999px !important;
+  overflow: hidden;
 }
 
 /* Spezifische Regel für das Logo-Bild */
 img[src$="logo_small.webp"] {
-    border-radius: 9999px !important;
-    overflow: hidden;
-    max-height: 40px !important;
-    width: auto !important;
-    vertical-align: middle;
+  border-radius: 9999px !important;
+  overflow: hidden;
+  max-height: 40px !important;
+  width: auto !important;
+  vertical-align: middle;
 }
 
 /* Spezifische Regel für das SVG-Element in der Navbar */
 .navbar a.navbar-brand svg {
-    clip-path: circle(50%);
+  clip-path: circle(50%);
 }
 
 /* Zusätzliche Regel für das SVG-Element im Footer */
 footer .navbar-brand svg {
-    border-radius: 9999px !important;
-    overflow: hidden;
+  border-radius: 9999px !important;
+  overflow: hidden;
 }
 
 /* Direktes Styling für den Kreis im SVG */
 svg circle {
-    border-radius: 9999px !important;
+  border-radius: 9999px !important;
 }
 
 /* Spezielles Styling für das BF-Logo */
 .navbar-brand svg circle:first-of-type {
-    overflow: hidden;
-    border-radius: 9999px !important;
+  overflow: hidden;
+  border-radius: 9999px !important;
 }
 
 /* Logo-Text Styling */
 .logo-text {
-    font-size: 1.5rem !important;
-    font-weight: bold !important;
-    margin-left: 0.5rem !important;
-    display: inline-block !important;
-    color: #1E90FF !important;
-    text-transform: lowercase !important;
-    letter-spacing: -0.05em !important;
-    line-height: 1 !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+  margin-left: 0.5rem !important;
+  display: inline-block !important;
+  color: #1e90ff !important;
+  text-transform: lowercase !important;
+  letter-spacing: -0.05em !important;
+  line-height: 1 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .logo-text::after {
-    content: ".";
-    color: #FF6347 !important;
-    font-weight: bold !important;
+  content: ".";
+  color: #ff6347 !important;
+  font-weight: bold !important;
 }
 
 /* Spezifisch für Footer Logo Text */
-footer .logo-text, 
+footer .logo-text,
 footer a .logo-text {
-    font-size: 1.5rem !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    display: inline-block !important;
-    color: #1E90FF !important;
+  font-size: 1.5rem !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: inline-block !important;
+  color: #1e90ff !important;
 }
 
 /* Sicherstellen, dass Footer-Elemente korrekt angezeigt werden */
 footer .navbar-brand {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
 }
 
 /* Testimonial Card Styles */
