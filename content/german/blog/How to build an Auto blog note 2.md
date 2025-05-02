@@ -15,7 +15,7 @@ draft: false
 ---
 
 
-![[wallpaperflare.com_wallpaper_retro.jpg]]
+![](/images/blog/)
 
 
 ## TOC Test1
