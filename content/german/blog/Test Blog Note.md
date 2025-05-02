@@ -15,7 +15,7 @@ draft: false
 ---
 
 
-![](\/images\/blog\/)
+![](/images/blog/wallpaperflare.com_wallpaper_digital.jpg)
 
 
 
