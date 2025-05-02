@@ -1,3 +1,0 @@
-### Task Schedular
-taskschd.msc
-
