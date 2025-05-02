@@ -13,3 +13,11 @@ tags:
   - blog
 draft: false
 ---
+
+# How to build an Auto blog note 2
+
+
+## TOC Test1
+
+### TOC Test 2
+
