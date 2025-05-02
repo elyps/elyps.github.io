@@ -15,7 +15,7 @@ draft: false
 ---
 
 
-![](/images/blog/)
+
 
 
 ## TOC Test1
