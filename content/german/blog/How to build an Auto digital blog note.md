@@ -15,7 +15,7 @@ draft: false
 ---
 
 
-![[wallpaper_digital.jpg]]
+![](/images/blog/wallpaper_digital.jpg)
 
 
 

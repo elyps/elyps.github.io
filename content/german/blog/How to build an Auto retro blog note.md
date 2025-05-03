@@ -15,7 +15,7 @@ draft: false
 ---
 
 
-![[wallpaper_retro.jpg]]
+![](/images/blog/wallpaper_retro.jpg)
 
 
 ## TOC Test1
