@@ -3,7 +3,7 @@ title: "How to build an Auto cyber blog note"
 meta_title: ""
 description: "this is meta description"
 date: 2022-04-04T05:00:00Z
-image: "images/blog/com_wallpaper_cyber.jpg"
+image: /images/blog/wallpaper_cyber.jpg
 categories:
   - Application
   - Data
@@ -15,7 +15,6 @@ draft: false
 ---
 
 
-![[wallpaperflare.com_wallpaper_cyber.jpg]]
 
 
 ## TOC Test1
