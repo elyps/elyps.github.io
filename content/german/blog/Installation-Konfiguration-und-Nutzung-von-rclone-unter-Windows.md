@@ -68,10 +68,12 @@ rclone config
 ## Code‑Beispiele
 
 # Tägliches Backup des Dokumentenordners nach OneDrive
+```pwsh
 $timestamp = Get-Date -Format "yyyy-MM-dd-HH-mm"
 rclone sync "C:\Users\<User>\Documents" onedrive:Backups\$timestamp `
          --progress --backup-dir onedrive:Archive\$timestamp `
          --log-file "C:\Logs\rclone-$timestamp.log"
+```
 
 ## Grafiken & Diagramme
 
@@ -101,6 +103,4 @@ rclone bietet eine schlanke, skriptbare Lösung, um heterogene Speicherorte unte
 
 ## Meta
 
-Lizenz: CC BY‑SA 4.0 · Kontakt: [bastian@example.com](mailto:bastian@example.com)
-
-/imagine prompt: Minimalistische Vektorgrafik „Installation & Nutzung von rclone unter Windows“, Wolke‑zu‑PC‑Sync‑Pfeile, moderne Farbpalette in Blau‑ und Violetttönen, dezentes Tech‑Feeling, 16:9, soft shadow, clean flat design
+Lizenz: CC BY‑SA 4.0 · Kontakt: [bastian@example.com](mailto:kontakt@bastian-fischer.dev)
