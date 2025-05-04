@@ -2,7 +2,7 @@
 title: "Installation, Konfiguration und Nutzung von rclone unter Windows"
 meta_title: "rclone auf Windows: Installation, Konfiguration & Nutzung"
 description: "Ausführliches Praxis‑Tutorial: rclone unter Windows installieren, konfigurieren, automatisieren und sicher für Backup & Sync einsetzen."
-date: 2025-05-04T17:22:46+02:00
+date: 2025-05-04T17:23:45+02:00
 image: "images/blog/installation-konfiguration-und-nutzung-von-rclone-unter-windows.png"
 categories:
   - Windows
