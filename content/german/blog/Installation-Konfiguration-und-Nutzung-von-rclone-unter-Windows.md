@@ -1,16 +1,14 @@
-```frontmatter
 ---
 title: "Installation, Konfiguration und Nutzung von rclone unter Windows"
 meta_title: "rclone auf Windows: Installation, Konfiguration & Nutzung"
 description: "Ausführliches Praxis‑Tutorial: rclone unter Windows installieren, konfigurieren, automatisieren und sicher für Backup & Sync einsetzen."
-date: "2025-05-06T09:48:14+02:00"
+date: "2025-05-06T11:55:02+02:00"
 image: "images/blog/installation-konfiguration-und-nutzung-von-rclone-unter-windows.jpg"
 categories: ["Windows", "rclone"]
 author: Bastian Fischer
 tags: ["rclone", "Backup", "Cloud‑Sync"]
 draft: false
 ---
-```
 
 
 > *TL;DR: rclone lässt sich binnen Minuten auf Windows installieren, bindet 40 + Cloud‑Dienste ein, verschlüsselt Daten on‑the‑fly und automatisiert Backups mit PowerShell‑Skripten.*
@@ -49,12 +47,9 @@ Windows‑Anwender benötigen häufig:
 
 ### Lösungsansatz
 
-`test code block`
-
-
 Nachfolgend ein vollständiger Workflow: **Installation → Remote‑Setup → Verschlüsselung → Automatisierung**.
 
-```
+```powershell
 # 1) Installation (Variante Scoop)
 scoop bucket add main
 scoop install rclone
