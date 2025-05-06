@@ -2,7 +2,7 @@
 title: "How to build an Application with modern Technology"
 meta_title: ""
 description: "this is meta description"
-date: "2025-05-06T09:25:05+02:00"
+date: "2025-05-06T09:26:37+02:00"
 image: "/images/image-placeholder.png"
 categories: ["Application", "Data"]
 author: "John Doe"
