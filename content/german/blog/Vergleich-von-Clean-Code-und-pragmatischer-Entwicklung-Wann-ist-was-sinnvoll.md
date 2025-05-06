@@ -1,5 +1,5 @@
 ---
-## title: "Vergleich von Clean Code und pragmatischer Entwicklung: Wann ist was sinnvoll?"  
+title: "Vergleich von Clean Code und pragmatischer Entwicklung: Wann ist was sinnvoll?"  
 meta_title: "Clean Code vs. Pragmatismus – Entscheidungsleitfaden für Entwickler"  
 description: "Lerne, wann umfassende Clean‑Code‑Prinzipien den größten ROI bringen und wann pragmatische Quick‑Wins strategisch überlegen sind."  
 date: "2025-05-06T00:00:00"
