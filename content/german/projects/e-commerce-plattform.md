@@ -2,7 +2,7 @@
 title: "E-Commerce Plattform"
 meta_title: "E-Commerce Plattform - Fallstudie"
 description: "Entwicklung einer leistungsstarken E-Commerce-Plattform mit modernen Web-Technologien"
-date: "2025-05-06T18:13:50+02:00"
+date: "2025-05-06T18:24:10+02:00"
 image: "/images/projects/e-commerce.webp"
 categories: ["Webentwicklung", "E-Commerce"]
 tags: ["React", "Node.js", "MongoDB", "AWS"]
