@@ -1,6 +1,19 @@
 {{ define "main" }}
-  {{ partial "page-header" . }}
+  {{/*  {{ partial "page-header" . }}  */}}
 
+  <section>
+    <div class="container text-center">
+      <div
+        class="from-body to-light dark:from-darkmode-body dark:to-darkmode-light rounded-2xl bg-gradient-to-b px-8 py-14">
+        <h1>Blog</h1>
+        <p>
+          Diese Themen sind darauf ausgelegt, sowohl Entwickler als auch technische Entscheider anzusprechen und bieten praxisnahe
+          Einblicke sowie strategische Perspektiven.
+        </p>
+        {{/*  {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}  */}}
+      </div>
+    </div>
+  </section>
 
   <section class="section">
     <div class="container">
