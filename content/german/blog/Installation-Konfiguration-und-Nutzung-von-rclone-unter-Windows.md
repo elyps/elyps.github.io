@@ -1,19 +1,15 @@
----
+<pre><code class="language-frontmatter">---
 title: "Installation, Konfiguration und Nutzung von rclone unter Windows"
 meta_title: "rclone auf Windows: Installation, Konfiguration & Nutzung"
 description: "Ausführliches Praxis‑Tutorial: rclone unter Windows installieren, konfigurieren, automatisieren und sicher für Backup & Sync einsetzen."
-date: "2025-05-06T09:26:37+02:00"
-image: images/blog/Installation--Konfiguration-und-Nutzung-von-rclone-unter-Windows-1920.webp
-categories:
-  - Windows
-  - rclone
+date: 2025‑05‑04
+image: "images/blog/installation-konfiguration-und-nutzung-von-rclone-unter-windows.jpg"
+categories: ["Windows", "rclone"]
 author: Bastian Fischer
-tags:
-  - rclone
-  - Backup
-  - Cloud‑Sync
+tags: ["rclone", "Backup", "Cloud‑Sync"]
 draft: false
 ---
+</code></pre>
 
 
 > *TL;DR: rclone lässt sich binnen Minuten auf Windows installieren, bindet 40 + Cloud‑Dienste ein, verschlüsselt Daten on‑the‑fly und automatisiert Backups mit PowerShell‑Skripten.*
@@ -57,7 +53,7 @@ Windows‑Anwender benötigen häufig:
 
 Nachfolgend ein vollständiger Workflow: **Installation → Remote‑Setup → Verschlüsselung → Automatisierung**.
 
-# 1) Installation (Variante Scoop)
+<pre><code># 1) Installation (Variante Scoop)
 scoop bucket add main
 scoop install rclone
 
@@ -89,6 +85,7 @@ rclone copy C:\Testdaten onedrive_crypt:/2025-05-Backup --progress
 
 # 6) Cloud als Laufwerk mounten (WinFsp nötig) --------------------------
 rclone mount onedrive_crypt: X: --vfs-cache-mode writes --dir-cache-time 1h
+</code></pre>
 
 ### Ergebnisse / Umsetzung
 
@@ -104,7 +101,7 @@ Screenshot: Explorer zeigt X:\ (OneDrive‑Crypt) mit AES‑Enc‑Ordnern – Da
 
 ## Code‑Beispiele
 
-# --- 1) Tägliches differenzielles Backup ----------------------------------
+<pre><code class="language-powershell"># --- 1) Tägliches differenzielles Backup ----------------------------------
 $timestamp = Get-Date -Format "yyyy-MM-dd"
 $rcloneLog  = "C:\Logs\rclone-$timestamp.log"
 
@@ -120,6 +117,7 @@ rclone copy D:\Media b2:Media `
 # --- 3) Geplante Aufgabe (Task Scheduler) ---------------------------------
 schtasks /Create /SC DAILY /TN "rclone-doc-backup" `
          /TR "powershell -File C:\Scripts\doc-backup.ps1" /ST 23:30
+</code></pre>
 
 ## Grafiken & Diagramme
 
