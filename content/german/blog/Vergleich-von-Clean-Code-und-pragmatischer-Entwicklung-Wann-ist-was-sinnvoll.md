@@ -3,7 +3,7 @@ title: "Vergleich von Clean Code und pragmatischer Entwicklung: Wann ist was sin
 meta_title: "Clean Code vs. Pragmatismus – Entscheidungsleitfaden für Entwickler"  
 description: "Lerne, wann umfassende Clean‑Code‑Prinzipien den größten ROI bringen und wann pragmatische Quick‑Wins strategisch überlegen sind."  
 date: "2025-05-06T00:00:00"
-image: "images/blog/vergleich-von-clean-code-und-pragmatischer-entwicklung-wann-ist-was-sinnvoll.png"  
+image: "/images/blog/vergleich-von-clean-code-und-pragmatischer-entwicklung-wann-ist-was-sinnvoll.png"  
 categories:
   - Software Engineering
   - Software Architektur
