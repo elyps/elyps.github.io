@@ -2,7 +2,7 @@
 title: "How to build an Application with modern Technology"
 meta_title: ""
 description: "this is meta description"
-date: "2025-05-06T09:31:49+02:00"
+date: "2025-05-06T09:38:09+02:00"
 image: "/images/image-placeholder.png"
 categories: ["Technology", "Data"]
 author: "Sam Wilson"
