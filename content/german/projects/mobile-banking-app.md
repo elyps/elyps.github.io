@@ -2,7 +2,7 @@
 title: "Mobile Banking App"
 meta_title: "Mobile Banking App - Fallstudie"
 description: "Entwicklung einer sicheren und benutzerfreundlichen Banking-App für iOS und Android"
-date: "2025-05-06T22:51:12+02:00"
+date: "2025-05-06T23:06:59+02:00"
 image: "/images/projects/banking-app.webp"
 categories: ["App-Entwicklung", "Fintech"]
 tags: ["Flutter", "Firebase", "Sicherheit", "UX/UI"]
