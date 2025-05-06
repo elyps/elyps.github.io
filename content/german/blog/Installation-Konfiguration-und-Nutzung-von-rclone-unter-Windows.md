@@ -2,7 +2,7 @@
 title: "Installation, Konfiguration und Nutzung von rclone unter Windows"
 meta_title: "rclone auf Windows: Installation, Konfiguration & Nutzung"
 description: "Ausführliches Praxis‑Tutorial: rclone unter Windows installieren, konfigurieren, automatisieren und sicher für Backup & Sync einsetzen."
-date: "2025-05-06T11:54:05+02:00"
+date: "2025-05-06T11:55:02+02:00"
 image: "images/blog/installation-konfiguration-und-nutzung-von-rclone-unter-windows.jpg"
 categories: ["Windows", "rclone"]
 author: Bastian Fischer
@@ -47,12 +47,9 @@ Windows‑Anwender benötigen häufig:
 
 ### Lösungsansatz
 
-`test code block`
-
-
 Nachfolgend ein vollständiger Workflow: **Installation → Remote‑Setup → Verschlüsselung → Automatisierung**.
 
-```
+```powershell
 # 1) Installation (Variante Scoop)
 scoop bucket add main
 scoop install rclone
