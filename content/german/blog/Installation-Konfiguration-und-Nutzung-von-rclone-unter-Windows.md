@@ -1,16 +1,14 @@
-```frontmatter
 ---
 title: "Installation, Konfiguration und Nutzung von rclone unter Windows"
 meta_title: "rclone auf Windows: Installation, Konfiguration & Nutzung"
 description: "Ausführliches Praxis‑Tutorial: rclone unter Windows installieren, konfigurieren, automatisieren und sicher für Backup & Sync einsetzen."
-date: "2025-05-06T11:46:19+02:00"
+date: "2025-05-06T11:54:05+02:00"
 image: "images/blog/installation-konfiguration-und-nutzung-von-rclone-unter-windows.jpg"
 categories: ["Windows", "rclone"]
 author: Bastian Fischer
 tags: ["rclone", "Backup", "Cloud‑Sync"]
 draft: false
 ---
-```
 
 
 > *TL;DR: rclone lässt sich binnen Minuten auf Windows installieren, bindet 40 + Cloud‑Dienste ein, verschlüsselt Daten on‑the‑fly und automatisiert Backups mit PowerShell‑Skripten.*
