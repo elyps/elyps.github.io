@@ -3,7 +3,7 @@ title: "Testgetriebene Entwicklung (TDD) in der Praxis: Ein Erfahrungsbericht"
 meta_title: "TDD in der Praxis – Erfahrungsbericht, Methoden & Best Practices"  
 description: "Detaillierter Praxisbericht zu testgetriebener Entwicklung (TDD) mit Java, COBOL & JavaScript: Methoden, Tools, Metriken, Best Practices."  
 date: "2025-05-07T00:00:00"
-image: "/images/blog/testgetriebene-entwicklung-tdd-in-der-praxis-ein-erfahrungsbericht.png"  
+image: images/blog/Testgetriebene-Entwicklung--TDD--in-der-Praxis--Ein-Erfahrungsbericht-1920.webp
 categories:
   - Softwareentwicklung
   - Qualitätssicherung
