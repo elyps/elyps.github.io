@@ -1,17 +1,18 @@
-```frontmatter
 ---
-image: 
 title: "Vergleich von Clean Code und pragmatischer Entwicklung: Wann ist was sinnvoll?"  
 meta_title: "Clean Code vs. Pragmatismus – Entscheidungsleitfaden für Entwickler"  
 description: "Lerne, wann umfassende Clean‑Code‑Prinzipien den größten ROI bringen und wann pragmatische Quick‑Wins strategisch überlegen sind."  
 date: "2025-05-06T00:00:00"
 image: "images/blog/vergleich-von-clean-code-und-pragmatischer-entwicklung-wann-ist-was-sinnvoll.png"  
-categories: ["Software Engineering", "Software Architektur"]  
+categories:
+  - Software Engineering
+  - Software Architektur
 author: Bastian Fischer  
-tags: ["Clean Code", "Technical Debt"]  
+tags:
+  - Clean Code
+  - Technical Debt
 draft: false
 ---
-```
 
 
 > _TL;DR – Clean Code zahlt sich bei langer Lebensdauer, hohem Risiko und reifem Team aus. Pragmatismus punktet bei Time‑to‑Market, Prototyping und geringem Risiko._
